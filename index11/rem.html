@@ -1,0 +1,49 @@
+<style>
+  html {
+    font-size: 14px;
+  }
+  li {
+    font-size: 0.8em;
+  }
+  img {
+    width: 800px;
+  }
+</style>
+
+<div>
+  <button id="up">Кликните, чтобы увеличить размер шрифта</button>
+</div>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDIPMHUF96gqtQbUlX1mB94VFnfxG4pwQ6CzSzCzYS&s">
+
+<ul>
+  <li>Жизнь
+    <ul>
+      <li>это жизнь
+        <ul>
+          <li>so why
+            <ul>
+              <li>not
+                <ul>
+                  <li>enjoy
+                    <ul>
+                      <li>it?</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<script>
+  let html = document.documentElement;
+  up.onclick = function() {
+    // при помощи увеличить размер шрифта html на 2px
+    html.style.fontSize = parseInt(getComputedStyle(html, '').fontSize) + 2 + 'px'
+  };
+</script>
